@@ -18,7 +18,7 @@ import tensorflow as tf
 import os
 
 
-MODEL_LABEL = "model_mobilenet.py"
+MODEL_LABEL = "model_mobilenet_4_smaller_dec.py"
 
 models_path = "../results/"
 model_folder = models_path + MODEL_LABEL + '/'

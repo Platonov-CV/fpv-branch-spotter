@@ -1,0 +1,4 @@
+Final training loss: 0.191
+Final training accuracy: 0.924
+Final validation loss: 0.230
+Final validation accuracy: 0.912

@@ -1,5 +1,10 @@
 import numpy as np
-from modules import tree_dataset, model_mobilenet
+from modules import (tree_dataset,
+    model_mobilenet,
+    model_mobilenet_2_aug,
+    model_mobilenet_3_bigger_dec,
+    model_mobilenet_4_smaller_dec
+)
 import tensorflow as tf
 from matplotlib import pyplot as plt
 from pathlib import Path
@@ -44,7 +49,7 @@ class DisplayCallback(tf.keras.callbacks.Callback):
 # TRAINING
 
 train_ds, val_ds, test_ds = tree_dataset.assemble()
-model, model_label = model_mobilenet.build()
+model, model_label = model_mobilenet_4_smaller_dec.build()
 model.compile(
     optimizer='adam',
     loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),

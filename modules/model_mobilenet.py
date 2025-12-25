@@ -4,8 +4,7 @@ import os
 
 
 def _upsample(filters, size, apply_dropout=False):
-    # initializer = tf.random_normal_initializer(0., 0.02)
-    initializer = tf.random_normal_initializer(0., 1.)
+    initializer = tf.random_normal_initializer(0., 0.02)
 
     result = tf.keras.Sequential()
     result.add(
